@@ -1,13 +1,20 @@
-def key_for_min_value(name_hash)
-    min_key = nil
-    min_val = nil
-    name_hash.each do |key,value|
-        if min_val == nil || value < min_val
-            min_val = value
-            min_key = key
+def key_for_min_value(hash)
 
+    smallestNum = 0
+    userName = nil
+
+    hash.collect do |k, v|
+
+        if smallestNum == 0
+
+            smallestNum = v
+            userName = k
+
+        elsif smallestNum > v
+
+            smallestNum = v
+            userName = k
         end
     end
-    min_key
-
+    userName
 end
