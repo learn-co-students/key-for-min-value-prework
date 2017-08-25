@@ -1,6 +1,20 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
+def key_for_min_value(hash)
 
-def key_for_min_value(name_hash)
+    smallestNum = 0
+    userName = nil
 
+    hash.collect do |k, v|
+
+        if smallestNum == 0
+
+            smallestNum = v
+            userName = k
+
+        elsif smallestNum > v
+
+            smallestNum = v
+            userName = k
+        end
+    end
+    userName
 end
