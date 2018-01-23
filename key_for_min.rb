@@ -3,5 +3,4 @@
 
 def key_for_min_value(name_hash)
   name_hash.key(name_hash.values.min)
-  #name_hash.select do |x, y| x if y == name_hash.values.min end
 end
