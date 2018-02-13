@@ -9,17 +9,18 @@ def key_for_min_value(name_hash)
     value << y
   end
   i = 0
-  j = 0
-  out = true
+  min_index = value.length
   while i < value.length
+    out = true
+    j = 0
     while j < value.length
       out = out && value[i] <= value[j]
+      j += 1
     end
     if out
-      out = i
-      break
+      min_index = i
     end
+    i += 1
   end
-  key[out]
-  
+  key[min_index]
 end
