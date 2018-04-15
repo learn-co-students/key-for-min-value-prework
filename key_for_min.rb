@@ -10,6 +10,8 @@ def key_for_min_value(name_hash)
   #below we're going to iterate
   name_hash.each do |key, value|
     if minimum_value == nil || value < test_value
+      #test_value above doesn't working. can't compare integer to ?? why?
+      #why am i using minimum_value? wont that always be true?
       minimum_key = key
     end
   end
