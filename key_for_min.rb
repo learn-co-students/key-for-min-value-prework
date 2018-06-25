@@ -4,11 +4,13 @@
 def key_for_min_value(name_hash)
 
 min = 0
+key = nil
 ikea = {:chair => 25, :table => 85, :mattress => 450}
 ikea.each do |x,y|
 if min > y || min ==0
   min = y
+  key = x
   end
   end
-  min
+  key
 end
