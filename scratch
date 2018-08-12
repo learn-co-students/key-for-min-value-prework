@@ -5,7 +5,6 @@ def key_for_min_value(name_hash)
       if number < smallest
          smallest = number
       end
-    smallest
     end   
     name_hash.index(smallest) 
 end
