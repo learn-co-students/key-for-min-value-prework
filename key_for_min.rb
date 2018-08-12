@@ -1,7 +1,4 @@
 def key_for_min_value(name_hash)
-  if name_hash == []
-    nil 
-  else 
     array = name_hash.collect { |key, value| value }
     smallest = array[0]
     array.each do |number|
@@ -11,5 +8,4 @@ def key_for_min_value(name_hash)
     smallest
     end   
     name_hash.index(smallest) 
-   end    
 end
