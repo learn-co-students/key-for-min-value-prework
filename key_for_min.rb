@@ -11,3 +11,6 @@ def key_for_min_value(name_hash)
   end
   nil
 end
+
+
+#Shelby: REVEIW TO FIND BETTER SOLUTION.
